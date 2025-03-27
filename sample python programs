@@ -1,0 +1,126 @@
+1)def has_vowel(s):
+    for char in s:
+        if char in 'aeiou':
+            return True
+    return False
+words = ["apple", "sky", "banana", "grape", "pear"]
+filtered_words = list(filter(has_vowel, words))
+print(words) 
+print(filtered_words)
+
+OUTPUT:
+['apple', 'sky', 'banana', 'grape', 'pear']
+['apple', 'banana', 'grape', 'pear']
+---------------------------------------------------------
+2)def has_uppercase(s):
+    for char in s:
+        if char.isupper():
+            return True
+    return False
+words = ["apple", "Banana", "grape", "Orange", "pear"]
+filtered_words = list(filter(has_uppercase, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['apple', 'Banana', 'grape', 'Orange', 'pear']
+['Banana', 'Orange']
+----------------------------------------------------------
+3)def is_even_length(s):
+    return len(s) % 2 == 0
+words = ["apple", "banana", "grape", "kiwi", "pear"]
+filtered_words = list(filter(is_even_length, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['apple', 'banana', 'grape', 'kiwi', 'pear']
+['banana', 'kiwi', 'pear']
+----------------------------------------------------------
+4)def starts_with_b(s):
+    return s[0].lower() == 'b'
+words = ["banana", "apple", "blueberry", "grape", "berry"]
+filtered_words = list(filter(starts_with_b, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['banana', 'apple', 'blueberry', 'grape', 'berry']
+['banana', 'blueberry', 'berry']
+-----------------------------------------------------------
+5)def is_numeric(s):
+    return s.isdigit()
+words = ["123", "hello", "456", "789", "apple"]
+filtered_words = list(filter(is_numeric, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['123', 'hello', '456', '789', 'apple']
+['123', '456', '789']
+------------------------------------------------------------
+6)def contains_e(s):
+    return 'e' in s
+words = ["red", "blue", "yellow", "green", "black"]
+filtered_words = list(filter(contains_e, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['red', 'blue', 'yellow', 'green', 'black']
+['red', 'blue', 'yellow', 'green']
+-------------------------------------------------------------
+7)def greater_than_four(s):
+    return len(s) > 4
+words = ["red", "yellow", "black", "blue", "green"]
+filtered_words = list(filter(greater_than_four, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['red', 'yellow', 'black', 'blue', 'green']
+['yellow', 'black', 'green']
+-------------------------------------------------------------
+8)def is_palindrome(s):
+    return s == s[::-1]
+words = ["radar", "hello", "level", "world", "madam"]
+filtered_words = list(filter(is_palindrome, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['radar', 'hello', 'level', 'world', 'madam']
+['radar', 'level', 'madam']
+------------------------------------------------------------
+9)def is_lowercase(s):
+    return s.islower()
+words = ["apple", "HELLO", "banana", "GRAPE", "pear"]
+filtered_words = list(filter(is_lowercase, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['apple', 'HELLO', 'banana', 'GRAPE', 'pear']
+['apple', 'banana', 'pear']
+-------------------------------------------------------------
+10)def ends_with_e(s):
+    return s.endswith('e')
+words = ["apple", "grape", "orange", "banana", "blue"]
+filtered_words = list(filter(ends_with_e, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['apple', 'grape', 'orange', 'banana', 'blue']
+['apple', 'grape', 'orange', 'blue']
+--------------------------------------------------------------
+11)def is_odd_length(s):
+    return len(s) % 2 != 0
+words = ["apple", "banana", "kiwi", "grape", "pear"]
+filtered_words = list(filter(is_odd_length, words))
+print(words)
+print(filtered_words)
+
+OUTPUT:
+['apple', 'banana', 'kiwi', 'grape', 'pear']
+['apple', 'grape']
